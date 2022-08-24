@@ -15,6 +15,7 @@ const marvelHeroes = [
     "Thor",
     "Wasp"
 ]
+
 //driver function used for display and passing values.
 function findHero() {
 
@@ -24,13 +25,26 @@ function findHero() {
     //used for display. no need to change
     document.getElementById("results").innerHTML = lword;
 
-    //extra credit display all of the heroes to the page
+    //display all of the heroes to the page
+    document.getElementById("namelist").innerHTML = marvelHeroes.join(" | ");
 
 }
 
 //takes an array of strings and returns the longest one. 
-function findLongestString(namesArry) {
+function findLongestString(namesArray) {
 
-    return "";
+    //1. Declare a variable
+    let lstring = "";
+
+    //2. Loop over namesArray
+    for (let index = 0; index < namesArray.length; index++) {
+        //3. If current string longer than longest string, add to variable
+        if (namesArray[index].length > lstring.length) {
+            lstring = namesArray[index];
+        }
+
+    }
+
+    return lstring;
 
 }

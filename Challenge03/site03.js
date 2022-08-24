@@ -11,7 +11,7 @@ function convertIt() {
         //call your function to conver the vm value to miles
         let milesValue = convertToKm(kmValue);
 
-        //display your name 
+        //display your value
         document.getElementById("results").innerHTML = `${kmValue} km = ${milesValue.toFixed(2)} miles`;
     }
 
@@ -19,5 +19,10 @@ function convertIt() {
 
 //takes an array of strings and returns the longest one. 
 function convertToKm(kmValue) {
-   return 0;
+   //declare variable to hold the conversion value
+    return milesValue = kmValue * .6214;
+
+
 }
+
+
